@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".triangle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="210dp"
+            android:layout_height="20dp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Triangle"
+            android:textColor="@color/black"
+            android:shadowColor="@color/cardview_dark_background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"> <!-- Change orientation to vertical -->
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Side 01"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Side 02"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/text12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Side 03"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/text13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/myButtonTriangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click Me"
+                android:onClick="buttonClick"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/myButtonTriangleBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:onClick="buttonClick"
+                android:layout_gravity="center"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
